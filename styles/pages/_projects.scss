@@ -1,0 +1,93 @@
+#projects {
+	padding: 4em 10px;
+	
+	.projects {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		
+		@include mq($from: tablet) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-left: -2rem;
+		}
+		
+		.project {
+			width: 100%;
+			margin-bottom: 2rem;
+			position: relative;
+			
+			@include mq($from: tablet) {
+				width: calc(50% - 2rem);
+				margin-bottom: 2rem;
+				position: relative;
+				margin-left: 2rem;
+			}
+			
+			&:hover {
+
+				.card {
+					box-shadow: 0 4px 15px 0 rgba(#000, 0.16);
+					
+					.cover {
+						opacity: 1;
+					}
+				}
+			}
+
+			&.project__temp {
+				display: flex;
+				
+				&:hover {
+					
+					.card {
+						box-shadow: none;
+						cursor: default;
+					}
+				}
+				
+				.card {
+					background-color: rgba(#000, 0.1);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					-webkit-user-select: none;
+					   -moz-user-select: none;
+					    -ms-user-select: none;
+					        user-select: none;
+					
+					span {
+						font-size: 0.8rem;
+						color: rgba(#000, 0.3);
+						letter-spacing: 0.2rem;
+					}
+				}
+			}
+			
+			.card {
+				width: 100%;
+				height: 200px;
+				position: relative;
+				transition: 180ms all ease-in-out;
+				cursor: pointer;
+				border-radius: 4px;
+				overflow: hidden;
+						
+				img {
+					width: 100%;
+				}
+
+				.cover {
+					position: absolute;
+					width: 100%;
+					bottom: 0px;
+					left: 0px;
+					background: rgba(#fff, 0.9);
+					padding: 1rem;
+					opacity: 0;
+					transition: 200ms all ease-in-out;
+				}
+			}
+		}
+	}
+}
