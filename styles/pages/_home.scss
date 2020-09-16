@@ -34,18 +34,20 @@
 
 			p {
 				margin-top: 5rem;
-				font-size: 1.1rem;
+				font-size: 1.3rem;
 				font-weight: 300;
+				line-height: 1.6;
 				width: 100%;
 				
 				@include mq($from: tablet) {
 					font-size: 1.5rem;
+					line-height: 1.4;
 				}
 			}
 
 			.social {
 				display: flex;
-				margin-top: 4rem;
+				margin-top: 3rem;
 				> div {
 					margin-right: 2rem;
 					a {
@@ -100,6 +102,7 @@
 			padding: 0;
 			font-size: 0.8rem;	
 			text-align: center;
+			white-space: nowrap;
 			color: rgba(#fff, 0.8);
 			-webkit-transition: 300ms all ease-in-out;
 			   -moz-transition: 300ms all ease-in-out;

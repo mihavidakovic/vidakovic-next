@@ -3,12 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import useScrollPosition from '@react-hook/window-scroll'
 
-import useOnScreen from '../hooks/useOnScreen';
+
+import Projects from '../components/Projects/Projects';
 
 export default function Home() {
   const scrollY = 1 - (useScrollPosition(60)/400)
-  const ref = useRef();
-  const onScreen = useOnScreen(ref, '-100px');
 
   return (
     <div className="">
@@ -72,34 +71,8 @@ export default function Home() {
 
       <section id="projects" className="projects">
         <div className="container">
-          <h2>Projects</h2>
-          <div className={onScreen ? "projects fadeIn" : "projects"} ref={ref}>
-            <div className="project project__temp">
-              <div className="card">
-                <span>TBA</span>
-              </div>
-            </div>
-            <div className="project project__temp">
-              <div className="card">
-                <span>TBA</span>
-              </div>
-            </div>
-            <div className="project project__temp">
-              <div className="card">
-                <span>TBA</span>
-              </div>
-            </div>
-            <div className="project project__temp">
-              <div className="card">
-                <span>TBA</span>
-              </div>
-            </div>
-            <div className="project project__temp">
-              <div className="card">
-                <span>TBA</span>
-              </div>
-            </div>
-          </div>
+          <h2>Latests projects</h2>
+          <Projects />
         </div>
       </section>
     </div>
