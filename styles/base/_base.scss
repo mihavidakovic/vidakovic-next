@@ -37,17 +37,19 @@ body {
 a {
   color: $brand-color;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent !important;
+
 
   @include on-event {
     color: $text-color;
     text-decoration: underline;
+    -webkit-tap-highlight-color: transparent !important;
   }
 }
 
 input,
 textarea,
 button,
-select,
-a {
+select {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }

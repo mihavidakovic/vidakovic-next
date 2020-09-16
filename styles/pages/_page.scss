@@ -11,6 +11,7 @@
 		align-items: center;
 		color: rgba(#000, 0.75);
 		cursor: pointer;
+		padding: $global-padding 0;
 		
 		&:hover {
 			color: rgba(#000, 1);
