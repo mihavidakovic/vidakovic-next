@@ -1,0 +1,54 @@
+.pageHeader {
+	background: rgb(14,116,183); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(14,116,183,1) 0%, rgba(73,139,183,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(14,116,183,1) 0%,rgba(73,139,183,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(14,116,183,1) 0%,rgba(73,139,183,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e74b7', endColorstr='#498bb7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	display: inline-flex;
+	width: 100%;
+	padding: $global-padding 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	@include mq($from: tablet) {
+		padding: $global-padding * 2 0;
+	}
+	
+	.container {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			width: 2rem;
+			
+			@include mq($from: tablet) {
+				width: 3rem;
+			}
+		}
+
+		.social {
+			display: flex;
+			> div {
+				margin-right: $global-margin;
+				a {
+					color: rgba(#fff, 0.8);
+					-webkit-transition: 250ms color ease-in-out;
+					   -moz-transition: 250ms color ease-in-out;
+					    -ms-transition: 250ms color ease-in-out;
+					     -o-transition: 250ms color ease-in-out;
+					        transition: 250ms color ease-in-out;
+					&:hover {
+						color: #FFF;
+					}
+					svg {
+						width: 1.2rem;
+						height: 1.2rem;
+						fill: currentColor;
+					}
+				}
+			}
+		}
+	}
+}

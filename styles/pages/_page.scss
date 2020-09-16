@@ -1,0 +1,51 @@
+.page {
+	margin-top: $global-margin * 5;
+	
+	@include mq($from: tablet) {
+		margin-top: $global-margin * 8;
+	}
+	
+	.page__back {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		color: rgba(#000, 0.75);
+		cursor: pointer;
+		
+		&:hover {
+			color: rgba(#000, 1);
+			
+			svg {
+				transform: translateX(-3px);
+			}
+		}
+		
+		svg {
+			width: 10px;
+			margin-right: $global-margin / 3;
+			transition: $global-transition;
+		}
+
+		span {
+			font-weight: 600;
+			transition: $global-transition;
+			font-size: 0.9rem;
+		}
+	}
+
+	&.page__loading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: $global-padding * 2;
+
+		.loading {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.7rem;
+			font-weight: 200;
+			color: rgba(#000, 0.3);
+		}
+	}
+}

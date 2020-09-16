@@ -17,12 +17,12 @@
 		
 		.project {
 			width: 100%;
-			margin-bottom: 2rem;
+			margin-bottom: $global-margin * 2;
 			position: relative;
+			cursor: pointer;
 			
 			@include mq($from: tablet) {
 				width: calc(50% - 2rem);
-				margin-bottom: 2rem;
 				position: relative;
 				margin-left: 2rem;
 			}
@@ -30,10 +30,18 @@
 			&:hover {
 
 				.card {
-					box-shadow: 0 8px 15px 0 rgba(#000, 0.03), 0 2px 2px 0 rgba(#000, 0.02);
+					box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+								0 2px 4px rgba(0,0,0,0.02), 
+								0 4px 8px rgba(0,0,0,0.02), 
+								0 8px 16px rgba(0,0,0,0.02),
+								0 16px 32px rgba(0,0,0,0.02), 
+								0 32px 64px rgba(0,0,0,0.02);
+				}
+
+				.project__info {
 					
-					.cover {
-						opacity: 1;
+					.project__info--title {
+						color: rgba(#000, 0.95);
 					}
 				}
 			}
@@ -46,20 +54,21 @@
 					align-items: center;
 					justify-content: center;
 					
-					&:hover {
-						box-shadow: none;
-						cursor: default;
-						user-select: none;
-					}
-					
 					span {
 						position: absolute;
 						top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
+						font-weight: bold;
+						font-size: 0.9rem;
 						letter-spacing: 2px;
-						font-weight: 800;
-						color: rgba(#000, 0.5);
+						color: rgba(#000, 0.3);
+					}
+					
+					&:hover {
+						box-shadow: none;
+						cursor: default;
+						user-select: none;
 					}
 				}
 			}
@@ -67,47 +76,30 @@
 			.card {
 				width: 100%;
 				padding-bottom: 56.25%;
-				position: relative;
 				transition: 300ms all ease-in-out;
-				cursor: pointer;
 				border-radius: 6px;
 				overflow: hidden;
+				position: relative;
 				background-size: cover;
 				background-position: center center;
-								
-				&:hover {
-					
-					.card__type {
-						bottom: 1rem;
-						opacity: 0;
-						@include mq($from: tablet) {
-							opacity: 1;
-						}
-					}
+			}
+
+			.project__info {
+				margin-top: $global-margin;
+				margin-bottom: 0;
+
+				.project__info--title {
+					font-weight: 700;
+					font-size: 1.2rem;
+					margin-bottom: $global-margin / 2;
+					color: rgba(#000, 0.7);
+					transition: $global-transition;
 				}
-				
-				.card__type {
-					position: absolute;
-					left: 50%;
-					bottom: 0.5rem;
-					text-align: center;
-					transform: translateX(-50%);
-					color: #FFF;
-					background-color: rgba(#000, 0.35);
-					padding: 0.3rem 1rem;
-					border-radius: 6px;
-					font-size: 0.7rem;
+
+				.project__info--type {
+					font-size: 0.9rem;
 					font-weight: 400;
-					white-space: nowrap;
-					transition: 300ms all ease-in-out;
-					opacity: 0;
-					
-					@include mq($from: tablet) {
-						opacity: 0;
-						bottom: 0rem;
-						font-size: 0.7rem;
-						padding: 0.5rem 1rem;
-					}
+					color: rgba(#000, 0.6);
 				}
 			}
 		}

@@ -28,13 +28,21 @@
 // 5. Components
 @import
   'components/button',
-  'components/fadeIn';
+  'components/fadeIn',
+  'components/page-header',
+  'components/slider';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/projects';
+  'pages/page',
+  'pages/projects',
+  'pages/project';
 
 // 7. Themes
 @import
   'themes/default';
+  
+// 7. Vendors
+@import
+  'vendor/awesome-slider';
