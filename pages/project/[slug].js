@@ -38,6 +38,7 @@ function Project({router}) {
 				<Head>
 					<title>{data.name} - Vidakovic.si</title>
 					<link rel="icon" href="/img/favicon.ico" />
+					<meta name="robots" content="all" />
 					<meta name="description" content="Web, UI/UX and Front-end developer" />
 					<meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Miha Vidakovič, Miha, Vidakovič" />
 					<meta name="author" content="Miha Vidakovič" />
