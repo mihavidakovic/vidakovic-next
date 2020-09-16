@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import { withRouter } from 'next/router'
+import { Link } from 'next/link'
 import _ from 'lodash';
 
 import Slider from '../../components/Slider/Slider';
@@ -60,7 +61,9 @@ function Project({router}) {
 				</Head>
 				<header className="pageHeader">
 					<div className="container">
-						<img src="/img/logo-bw.svg" className="logo" alt="logo" />
+						<Link to="/">
+							<img src="/img/logo-bw.svg" className="logo" alt="logo" />
+						</Link>
 						<div className="social">
 							<div className="linkedin">
 								<a href="https://www.linkedin.com/in/mihavidakovic" target="_blank" rel="noopener noreferrer">
