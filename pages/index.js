@@ -38,7 +38,7 @@ export default function Home() {
 				<div className="container">
 					<div className="homeIntro">
 						<img src="/img/logo-bw.svg" className="logo" alt="logo" />
-						<p>Hi, I’m Miha – I’m a Web, UI/UX and Front-end developer living in Kranj, Slovenia. I love working on awesome projects with inspiring people.</p>
+						<p>Hi, I’m Miha dev – I’m a Web, UI/UX and Front-end developer living in Kranj, Slovenia. I love working on awesome projects with inspiring people.</p>
 						<div className="social">
 							<div className="linkedin">
 								<a href="https://www.linkedin.com/in/mihavidakovic" target="_blank" rel="noopener noreferrer">
