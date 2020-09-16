@@ -15,7 +15,7 @@ function Slider(props) {
 		fade: true,
 		lazyLoad: false,
 		autoplay: true,
-		autoplaySpeed: 6000,
+		autoplaySpeed: 6001,
 		cssEase: "ease-in-out"
 	};
 
