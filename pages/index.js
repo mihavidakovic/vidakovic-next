@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Vidakovic.si</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Web designer Miha Vidakovič" />
+        <meta name="description" content="Web, UI/UX and Front-end developer" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Miha Vidakovič, Miha, Vidakovič" />
         <meta name="author" content="Miha Vidakovič" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
