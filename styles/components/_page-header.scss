@@ -9,6 +9,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 9999;
 	
 	@include mq($from: tablet) {
 		padding: $global-padding * 2 0;
@@ -22,6 +23,7 @@
 
 		.logo {
 			width: 2rem;
+			cursor: pointer;
 			
 			@include mq($from: tablet) {
 				width: 3rem;
