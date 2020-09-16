@@ -5,7 +5,6 @@ import SliderSlick from "react-slick";
 
 function Slider(props) {
 	const [images, setImages] = useState();
-	console.log(props.images)
 
 	const settings = {
 		dots: false,
@@ -30,7 +29,7 @@ function Slider(props) {
 								<>
 								</>
 							) : (
-								<div class="content__description">
+								<div className="content__description">
 									<span>{image.description}</span>
 								</div>
 							)}

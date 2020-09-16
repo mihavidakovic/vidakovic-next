@@ -22,6 +22,7 @@
 
 		.logo {
 			width: 2rem;
+			cursor: pointer;
 			
 			@include mq($from: tablet) {
 				width: 3rem;
