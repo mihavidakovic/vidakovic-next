@@ -1,0 +1,115 @@
+[
+	{
+		"name": "NyonSport",
+		"slug": "nyon-sport",
+		"image": "/projects/nyon-sport/cover.jpg",
+		"type": "Corporate identity & website design.",
+		"tags": ["Adobe Illustrator", "Adobe InDesign", "Word", "HTML", "SCSS", "React", "Next.js"],
+		"description": "Designed corporate identity including logotype, business cards, letterhead, and website. I created a website with help of Next.js.",
+		"images": [
+			{
+				"image": "/projects/nyon-sport/1.jpg",
+				"description": "Two color variants."
+			},
+			{
+				"image": "/projects/nyon-sport/2.jpg",
+				"description": "Buissines cards."
+			},
+			{
+				"image": "/projects/nyon-sport/3.jpg.",
+				"description": "Letterhead."
+			}
+		],
+		"temp": false
+	},
+	{
+		"name": "Covid19.si",
+		"slug": "covid19",
+		"image": "/projects/covid19/cover.jpg",
+		"type": "Brand identity, website design, front-end & back-end development.",
+		"tags": ["Adobe Illustrator", "Figma", "HTML", "SCSS", "React", "Node.js", "PostgreSQL"],
+		"description": "I designed a web app in Figma, transformed it into a mobile responsive website made with React.",
+		"images": [
+			{
+				"image": "/projects/covid19/1.jpg",
+				"description": "Frontpage on a computer."
+			},
+			{
+				"image": "/projects/covid19/2.jpg",
+				"description": "Country detailed information."
+			},
+			{
+				"image": "/projects/covid19/3.jpg",
+				"description": "Worldwide information details."
+			}
+		],
+		"temp": false
+	},
+	{
+		"name": "Dominvrt.si",
+		"slug": "dominvrt",
+		"image": "/projects/dominvrt/cover.jpg",
+		"type": "Brand identity, website design & front-end development.",
+		"tags": ["Figma", "Adobe Illustrator", "HTML", "SCSS", "Angular"],
+		"description": "Designed a website in Figma then coded into HTML/CSS for an Angular project.",
+		"images": [
+			{
+				"image": "/projects/dominvrt/1.jpg",
+				"description": "Frontpage on multiple devices."
+			},
+			{
+				"image": "/projects/dominvrt/2.jpg",
+				"description": "Custom sowing calendar design."
+			},
+			{
+				"image": "/projects/dominvrt/3.jpg",
+				"description": "Styleguide created in Figma"
+			}
+		],
+		"temp": false
+	},
+	{
+		"name": "Bibaleze.si",
+		"slug": "bibaleze",
+		"image": "/projects/bibaleze/cover.jpg",
+		"type": "Brand identity, website design & front-end development.",
+		"tags": ["logo", "web design", "buissines cards"],
+		"description": "I designed a new logotype and picked new primary colors for the project. The website was designed in Figma then coded into HTML/CSS for an Angular project.",
+		"images": [
+			{
+				"image": "/projects/bibaleze/1.jpg",
+				"description": "Frontpage on multiple devices."
+			},
+			{
+				"image": "/projects/bibaleze/2.jpg",
+				"description": "Styleguide prepared for development in Figma."
+			},
+			{
+				"image": "/projects/bibaleze/3.jpg",
+				"description": "Custom components."
+			}
+		],
+		"temp": false
+	},
+	{
+		"name": "",
+		"image": "",
+		"type": "",
+		"tags": [],
+		"temp": true
+	},
+	{
+		"name": "",
+		"image": "",
+		"type": "",
+		"tags": [],
+		"temp": true
+	},
+	{
+		"name": "",
+		"image": "",
+		"type": "",
+		"tags": [],
+		"temp": true
+	}
+]
