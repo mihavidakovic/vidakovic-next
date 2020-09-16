@@ -5,6 +5,9 @@
 		width: 100%;
 		display: flex;
 		flex-flow: column;
+		opacity: 0;
+		transform: translateY(1rem);
+		transition: 300ms all ease-in-out;
 		
 		@include mq($from: tablet) {
 			flex-direction: row;
