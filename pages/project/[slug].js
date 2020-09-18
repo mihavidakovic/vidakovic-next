@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, withRouter } from 'next/router'
 import { Link } from 'next/link'
 import _ from 'lodash';
+import { motion } from "framer-motion";
 
 import Slider from '../../components/Slider/Slider';
 
@@ -11,6 +12,56 @@ export async function getServerSideProps(context) {
 		props: {}, // will be passed to the page component as props
 	};
 }
+
+// Animation
+const title = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.2,
+			duration: 0.8
+		}
+	}
+};
+
+const description = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.4,
+			duration: 0.8
+		}
+	}
+};
+
+const tags = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.6,
+			duration: 0.8
+		}
+	}
+};
+
+const sliderBox = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.9,
+			duration: 0.8
+		}
+	}
+};
+
 
 function Project({router}) {
 
@@ -60,7 +111,7 @@ function Project({router}) {
 				</Head>
 				<header className="pageHeader">
 					<div className="container">
-						<img src="/img/logo-bw.svg" className="logo" alt="logo" onClick={() => router.back()} />
+						<img src="/img/logo-bw.svg" className="logo" alt="logo" onClick={() => router.push('/')} />
 						<div className="social">
 							<div className="linkedin">
 								<a href="https://www.linkedin.com/in/mihavidakovic" target="_blank" rel="noopener noreferrer">
@@ -92,19 +143,42 @@ function Project({router}) {
 				 			<span>Back</span>
 				 		</div>
 				 		<div className="project__info">
-				 			<h2 className="project__info--name">{data.name}</h2>
-				 			<span className="project__info--description">{data.description}</span>
-				 			<div className="project__info--tags">
-				 				<span>Technologies used:</span>
-				 				{data.tags.map((tag, index) => {
-				 					return(
-						 				<div className="tag" key={index}>
-						 					{tag}
-						 				</div>
-				 					)
-				 				})}
-				 			</div>
-				 			<Slider images={data.images} />
+				 			<motion.h2 
+				 				className="project__info--name"
+						 		initial="hidden" 
+								animate="visible"
+			 					variants={title}>
+			 						{data.name}
+			 				</motion.h2>
+				 			<motion.p 
+				 				className="project__info--description"
+						 		initial="hidden" 
+								animate="visible"
+			 					variants={description}>
+				 					{data.description}
+				 			</motion.p>
+				 			<motion.div 
+				 				className="project__info--tags"
+						 		initial="hidden" 
+								animate="visible"
+			 					variants={tags}>
+					 				<span>Technologies used:</span>
+					 				{data.tags.map((tag, index) => {
+					 					return(
+							 				<div 
+							 					className="tag" 
+						 						key={index}>
+							 					{tag}
+							 				</div>
+					 					)
+					 				})}
+				 			</motion.div>
+				 			<motion.div
+						 		initial="hidden" 
+								animate="visible"
+			 					variants={sliderBox}>
+				 				<Slider images={data.images} />
+				 			</motion.div>
 				 		</div>
 					 </div>
 				</section>

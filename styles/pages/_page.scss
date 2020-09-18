@@ -48,4 +48,38 @@
 			color: rgba(#000, 0.3);
 		}
 	}
+
+	&.page__404 {
+
+		.page__404--content {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+			padding-top: $global-padding * 6;
+			
+			.content__icon {
+				width: 4rem;
+				color: rgba($primary-color, 0.2);
+				margin-bottom: $global-margin * 2;
+			}
+
+			.content__title {
+				width: auto;
+				font-size: 5rem;
+				font-weight: 900;
+				color: rgba($primary-color, 0.8);
+				margin-bottom: $global-margin / 2;
+			}
+
+			.content__subtitle {
+				width: auto;
+				margin-top: $global-margin * 3;
+				font-size: 1.5rem;
+				font-weight: 600;
+				color: rgba($primary-color, 0.4);
+				margin: 0;
+			}
+		}
+	}
 }

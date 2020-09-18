@@ -26,10 +26,10 @@ export default function Projects() {
 	if (data) {
 		return (
 			<div className={onScreen ? "projects fadeIn" : "projects"} ref={ref}>
-				{data.map((project, index) => {
+				{data.map((project, i) => {
 					return (
 							<>
-								<ProjectBox data={project} key={index} />
+								<ProjectBox data={project} key={i} />
 							</>
 						)
 				}) }
