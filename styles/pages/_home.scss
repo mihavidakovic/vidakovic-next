@@ -19,13 +19,17 @@
 	    justify-content: center;
 	    
 		.homeIntro {
-			margin-top: -4rem;
+			margin-top: -2rem;
 			width: 100%;
 			display: inline-flex;
 	        flex-direction: column;
 	        align-content: center;
 	        -webkit-justify-content: center;
 	                justify-content: center;
+	        
+			@include mq($from: tablet) {
+				margin-top: -4rem;
+			}
 			
 			.logo {
 				width: 5rem;
