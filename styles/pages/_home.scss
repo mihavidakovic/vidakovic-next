@@ -42,6 +42,10 @@
 				font-weight: 300;
 				line-height: 1.6;
 				width: 100%;
+				-webkit-user-select: none;
+				   -moz-user-select: none;
+				    -ms-user-select: none;
+				        user-select: none;
 				
 				@include mq($from: tablet) {
 					font-size: 1.5rem;
