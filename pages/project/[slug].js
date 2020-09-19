@@ -50,7 +50,7 @@ const tags = {
 	}
 };
 
-const sliderBox = {
+const images = {
 	hidden: { y: 20, opacity: 0 },
 	visible: {
 		y: 0,
@@ -174,12 +174,21 @@ function Project({router}) {
 					 					)
 					 				})}
 				 			</motion.div>
-				 			<motion.div
-						 		initial="hidden" 
-								animate="visible"
-			 					variants={sliderBox}>
-				 				<Slider images={data.images} />
-				 			</motion.div>
+				 			<div className="project__images">
+				 				{data.images.map((item, i) => {
+				 					return (
+				 						<motion.div 
+				 							key={i}
+				 							className="project__images--image"
+									 		initial="hidden" 
+											animate="visible"
+						 					variants={images}>
+					 						<img src={item.image} title={item.description} />
+					 						<p className="image__description">{item.description}</p>
+					 					</motion.div>
+				 					)
+				 				})}
+				 			</div>
 				 		</div>
 					 </div>
 				</section>

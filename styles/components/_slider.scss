@@ -1,7 +1,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css";
 .content-slider {
 	width: 100%;
-	height: calc(100% - 30px);
+	height: 400px;
 	position: relative;
 	border-radius: 6px;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.04), 
@@ -12,7 +12,7 @@
 				0 32px 64px rgba(0,0,0,0.04);
 	
 	@include mq($from: tablet) {
-		height: calc(100% - 10px);
+		height: 440px;
 	}
 	
 	.slick-dots {
@@ -89,7 +89,7 @@
 		
 		.slide-block__content {
 			position: relative;
-			width: 100%;
+			width: 400px;
 			height: 100%;
 			display: flex;
 			flex-align: center;
@@ -97,6 +97,7 @@
 
 			img {
 				width: 100%;
+				height: 100%;
 			}
 
 			.content__description {
@@ -107,7 +108,6 @@
 				background-color: rgba(#000, 0.35);
 				padding: $global-padding / 2 $global-padding;
 				color: #FFF;
-				display: none;
 				
 				@include mq($from: tablet) {
 					padding: $global-padding $global-padding * 2;
