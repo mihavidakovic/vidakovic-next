@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"name": "NyonSport",
 		"slug": "nyon-sport",
 		"image": "/projects/nyon-sport/cover.jpg",
@@ -23,6 +24,7 @@
 		"temp": false
 	},
 	{
+		"id": 2,
 		"name": "Covid19.si",
 		"slug": "covid19",
 		"image": "/projects/covid19/cover.jpg",
@@ -46,6 +48,7 @@
 		"temp": false
 	},
 	{
+		"id": 3,
 		"name": "Dominvrt.si",
 		"slug": "dominvrt",
 		"image": "/projects/dominvrt/cover.jpg",
@@ -69,6 +72,7 @@
 		"temp": false
 	},
 	{
+		"id": 4,
 		"name": "Bibaleze.si",
 		"slug": "bibaleze",
 		"image": "/projects/bibaleze/cover.jpg",
@@ -92,6 +96,7 @@
 		"temp": false
 	},
 	{
+		"id": 5,
 		"name": "",
 		"image": "",
 		"type": "",
@@ -99,6 +104,7 @@
 		"temp": true
 	},
 	{
+		"id": 6,
 		"name": "",
 		"image": "",
 		"type": "",
@@ -106,6 +112,7 @@
 		"temp": true
 	},
 	{
+		"id": 7,
 		"name": "",
 		"image": "",
 		"type": "",

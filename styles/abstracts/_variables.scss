@@ -4,57 +4,16 @@
 
 
 
+// Colors
+$primary-color: #236da0;
+
+$text-color: rgba(#000, 0.8);
 
 
-/// Regular font family
-/// @type List
-$text-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+// Widrh
+$max-width: 50rem;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(41, 128, 186) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgba(#000, 0.05) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgba(#000, 0.1) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgba(#000, 0.75) !default;
-
-
-
-
-
-/// Container's maximum width
-/// @type Length
-$max-width: 50rem !default;
-
-
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
-
-
+// Other
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-transition: 300ms all ease-in-out;
