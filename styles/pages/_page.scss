@@ -11,6 +11,10 @@
 		align-items: center;
 		color: rgba(#000, 0.75);
 		cursor: pointer;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
 		
 		&:hover {
 			color: rgba(#000, 1);
