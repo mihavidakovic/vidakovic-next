@@ -109,6 +109,7 @@
 				background-color: rgba(#000, 0.35);
 				padding: $global-padding / 2 $global-padding;
 				color: #FFF;
+				display: none;
 				
 				@include mq($from: tablet) {
 					padding: $global-padding $global-padding * 2;

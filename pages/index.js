@@ -148,7 +148,9 @@ export default function Home() {
 											custom={i}
 											initial="hidden" 
 											animate="visible"
-											variants={socialIcons}>
+											variants={socialIcons}
+											whileHover={{ scale: 1.07 }} 
+											whileTap={{ scale: 0.99 }}>
 											<a href={item.link} target="_blank" rel="noopener noreferrer">
 												<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox={item.icon.size}><path fill="currentColor" d={item.icon.d}></path></svg>
 											</a>
