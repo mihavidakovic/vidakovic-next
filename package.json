@@ -25,6 +25,7 @@
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.11",
     "sass": "^1.26.10",
-    "sass-mq": "^5.0.1"
+    "sass-mq": "^5.0.1",
+    "soccer-streams-scraper": "^1.0.1"
   }
 }
