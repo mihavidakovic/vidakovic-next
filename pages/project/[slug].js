@@ -7,12 +7,6 @@ import { motion } from "framer-motion";
 
 import Slider from '../../components/Slider/Slider';
 
-export async function getServerSideProps(context) {
-	return {
-		props: {}, // will be passed to the page component as props
-	};
-}
-
 // Animation
 const title = {
 	hidden: { y: 20, opacity: 0 },

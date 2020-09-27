@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import useScrollPosition from '@react-hook/window-scroll'
 import { motion } from 'framer-motion';
-var soccerStreams = require('soccer-streams-scraper')
 
 import Projects from '../components/Projects/Projects';
 
@@ -69,10 +68,6 @@ const cta = {
 
 export default function Home() {
 	const scrollY = 1 - (useScrollPosition(60)/400)
-
-soccerStreams.getMatches().then(res => {
-  console.log(res)
-})
 
 	let social = [
 			{
