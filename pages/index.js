@@ -114,6 +114,7 @@ export default function Home() {
 				<meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Miha Vidakovič, Miha, Vidakovič" />
 				<meta name="author" content="Miha Vidakovič" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<script async defer data-domain="vidakovic.si" src="https://plausible.io/js/plausible.js"></script>
 				<script
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=UA-133841417-1"
